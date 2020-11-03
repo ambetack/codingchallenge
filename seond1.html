@@ -1,0 +1,36 @@
+<!--get numbers of hours , minutes and seconds from number of seconds -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> javascript second </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        
+        <script>
+
+            function secondToHms(d) {
+
+                d =Number(d);
+                var h= Math.floor(d/3600);
+                var m = Math.floor(d%3600/60);
+                var s = Math. floor(d%3600 % 60);
+
+                var hDisplay = h>0? h +(h==1?"hour,":"hours,") : "";
+                var mDisplay=m>0?  m+(m==1 ?"minute,":"minutes,") :"";
+                var sDisplay=s>0? s +(s==1? "second" :"seconds") :"";
+                return hDisplay+mDisplay+sDisplay;
+
+            }
+
+            var result =secondToHms(129)
+            console.log("enter the number",result)
+        </script>
+    </body>
+</html>

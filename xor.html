@@ -1,0 +1,49 @@
+<!--you are given two number l and r you have to find if xor of all the number in range is odd or even -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tuorial on js </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1>this is js ankur </h1>
+
+        
+        
+
+
+    <!--script src="js/tut37.js"></script-->
+   <!----script src="js/tut4.js"> </script> -->
+    <!--script src="js/XOR.js"> </script>
+    <script src="js/time.js"> </script-->
+    <script>
+        function isXor(L ,R) {
+
+oddCount = (R-L)/2
+if(R%2 ==1 || L %2 ==1)
+oddCount++;
+//check if count off odd numbers
+//is even or odd
+
+if(oddCount%2==0)
+return 'Even';
+else 
+return 'odd';
+
+
+}
+
+var result =isXor(5,3)
+
+
+console.log("the xor of 5,3:"+result)
+
+    </script>
+    
+
+    </body>
+
+</html>
